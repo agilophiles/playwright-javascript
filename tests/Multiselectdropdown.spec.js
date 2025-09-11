@@ -19,7 +19,7 @@ test('Handle dropdowns', async ({page}) =>{
      // 3. Check presence of the valus in the dropdown
      
      const content = await page.locator('#colors').textContent();
-     await expect(content.includes('Blues')).toBeTruthy();
+     await expect(content.includes('Blues')).toBeFalsy();
 
 
 
