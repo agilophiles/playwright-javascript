@@ -26,6 +26,7 @@ export default defineConfig({
   // reporter: 'html',
    reporter: [
     ['line'], // console output
+    ['html'],
     ['allure-playwright',{outputFolder: 'allure-results', overwriteExisting: true}]
   ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
